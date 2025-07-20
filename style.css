@@ -1,0 +1,556 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #000000;
+  color: white;
+}
+
+.header {
+  background-color: #000000;
+  color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 90px;
+  position: fixed;
+  top: 0;
+  z-index: 100;
+}
+
+.header h1 {
+  margin-left: 20px;
+  font-family: Ruda;
+  font-weight: 700;
+  font-style: bold;
+  font-size: 29px;
+  line-height: 0px;
+  letter-spacing: 6%;
+  text-align: center;
+  vertical-align: middle;
+}
+
+#navbar > ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+#navbar > ul > li > a {
+  text-decoration: none;
+  color: white;
+  font-family: Ruda;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 0px;
+  letter-spacing: 0%;
+  text-align: center;
+  vertical-align: middle;
+}
+
+#navbar > ul > li > a:hover {
+  text-decoration: underline;
+  font-size: 25px;
+  opacity: 0.9;
+}
+
+#headerIcon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-right: 30px;
+}
+
+#headerIcon > img {
+  width: 60px;
+  object-fit: cover;
+}
+
+#headerIcon > img:hover {
+  width: 70px;
+}
+
+#hero {
+  width: 100%;
+  height: 85vh;
+  margin-top: 90px;
+  background-image: url("./images/Pizza.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  padding-top: 50px;
+  opacity: 0.9;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.hero_heading {
+  width: 50%;
+}
+
+.hero_heading > h1 {
+  font-family: Quattrocento;
+  font-weight: 700;
+  font-style: bold;
+  font-size: 101px;
+  line-height: 108.5px;
+  letter-spacing: 9%;
+  text-align: center;
+  margin-left: 0;
+}
+
+#hero hr {
+  width: 30%;
+  height: 10px;
+  background-color: #f24c4c;
+  box-shadow: 3px 6px 18px 0px #00000040;
+  border: none;
+  margin-top: 30px;
+  margin-left: 100px;
+}
+
+.hero_para {
+  width: 30%;
+  font-family: Ruda;
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 40px;
+  letter-spacing: 9%;
+  margin-left: 100px;
+  margin-top: 30px;
+  opacity: 1;
+}
+
+#about {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+}
+
+.aboutHeading h1 {
+  font-family: Quattrocento;
+  font-weight: 400;
+  font-size: 60px;
+  line-height: 0px;
+  letter-spacing: 0%;
+  text-align: center;
+  vertical-align: middle;
+}
+
+#about > hr {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  width: 25%;
+  height: 10px;
+  background: #B62828;
+  box-shadow: 3px 6px 18px 0px #00000040;
+  border: none;
+}
+
+.imageAndContent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+
+.about_text,
+.about_image {
+  width: 40%;
+  height: 400px;
+}
+
+.about_image img {
+  width: 100%;
+  height: 100%;
+}
+
+.about_text p {
+  font-family: Ruda;
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 40px;
+  letter-spacing: 9%;
+}
+
+.about_text hr {
+  width: 90%;
+  height: 4px;
+  background: #B62828;
+  box-shadow: 3px 6px 18px 0px #00000040;
+  border: none;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+#menu_bar {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+}
+
+.menu_heading h1 {
+  font-family: Quattrocento;
+  font-weight: 400;
+  font-size: 60px;
+  line-height: 0px;
+  text-align: center;
+}
+
+#menu_bar > hr {
+  width: 22%;
+  height: 10px;
+  background: #B62828;
+  box-shadow: 3px 6px 18px 0px #00000040;
+  border: none;
+  margin: 40px auto;
+}
+
+.menu_para {
+  width: 70%;
+}
+
+.menu_para p {
+  font-family: Ruda;
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 40px;
+  letter-spacing: 9%;
+}
+
+.menu_list {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 60px;
+  width: 80vw;
+}
+
+.menu_item {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 40px;
+  gap: 20px;
+  width: 600px;
+}
+
+.menu_item > img {
+  width: 220px;
+  height: 170px;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+}
+
+.item > h1 {
+  font-family: Ruda;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 0px;
+  color: #F2C94C;
+}
+
+.item > p {
+  font-family: Ruda;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 40px;
+  letter-spacing: 9%;
+}
+
+#carouselArea {
+  margin: 100px auto;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+}
+
+.carouselHeading h1 {
+  font-family: Quattrocento;
+  font-weight: 400;
+  font-size: 60px;
+  line-height: 0px;
+  text-align: center;
+}
+
+#carouselArea hr {
+  width: 22%;
+  height: 9px;
+  background: #B62828;
+  box-shadow: 3px 6px 18px 0px #000000;
+  border: none;
+  margin: 40px auto;
+}
+
+#gallary {
+  margin: 100px auto;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.gallaryHeading h1 {
+  font-family: Quattrocento;
+  font-weight: 400;
+  font-size: 60px;
+  line-height: 0px;
+  text-align: center;
+}
+
+#gallary hr {
+  width: 22%;
+  height: 9px;
+  background: #B62828;
+  box-shadow: 3px 6px 18px 0px #000000;
+  border: none;
+  margin: 40px auto;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 50% 25% 25%;
+  grid-template-rows: repeat(6, 1fr);
+  width: 80vw;
+  height: 70vh;
+  gap: 5px;
+}
+
+.grid-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+.img1 {
+  grid-column: 1 / 2;
+  grid-row: 1 / 7;
+}
+
+.img2 {
+  grid-column: 2 / 3;
+  grid-row: 1 / 3;
+}
+
+.img3 {
+  grid-column: 2 / 3;
+  grid-row: 3 / 5;
+}
+
+.img4 {
+  grid-column: 2 / 3;
+  grid-row: 5 / 7;
+}
+
+.img5 {
+  grid-column: 3 / 4;
+  grid-row: 1 / 4;
+}
+
+.img6 {
+  grid-column: 3 / 4;
+  grid-row: 4 / 7;
+}
+
+#findus {
+  margin: 100px auto;
+  width: 90%;
+}
+
+.findus_heading h1 {
+  font-family: Quattrocento;
+  font-weight: 400;
+  font-size: 60px;
+  line-height: 0px;
+  text-align: center;
+}
+
+#findus > hr {
+  width: 22%;
+  height: 9px;
+  background: #B62828;
+  box-shadow: 3px 6px 18px 0px #000000;
+  border: none;
+  margin: 40px auto 100px auto;
+}
+
+.map {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.map_data {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  width: 40%;
+  min-width: 300px;
+}
+
+.map_data > p {
+  font-family: Ruda;
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 40px;
+  letter-spacing: 9%;
+}
+
+.map_logo {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.mapIcon,
+.callIcon {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.map_logo img {
+  width: 50px;
+  height: 45px;
+}
+
+.live_map {
+  width: 50%;
+  min-width: 300px;
+}
+
+.fotter_container {
+  margin: 150px auto 50px;
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 55%;
+  flex-wrap: wrap;
+}
+
+.footer_data {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.footer_data img {
+  width: 50px;
+  height: 45px;
+}
+
+.mail_logo,
+.callIcon,.mapIcon{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  font-size: 20px;
+}
+
+@media (max-width: 1220px) {
+  #headerIcon {
+    display: none;
+  }
+
+  .header {
+    justify-content: space-around;
+  }
+
+  #hero hr {
+    display: none;
+  }
+}
+
+@media (max-width: 1000px) {
+  .header h1 {
+    display: none;
+  }
+
+  .imageAndContent {
+    flex-direction: column;
+  }
+
+  .about_text,
+  .about_image {
+    width: 70%;
+  }
+
+  .hero_heading,
+  .hero_para {
+    width: 80%;
+    text-align: center;
+  }
+}
+
+@media (max-width: 775px) {
+  .hero_heading > h1 {
+    font-weight: 600;
+    font-size: 40px;
+  }
+
+  #hero {
+    flex-direction: column;
+  }
+
+  #navbar > ul > li {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 600px) {
+  .about_text,
+.about_image {
+  width: 80%;
+  height: 300px;
+}
+.about_text p {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 25px;
+  letter-spacing: 6%;
+}
+
+  .menu_item {
+    flex-wrap: wrap;
+  }
+
+  .item {
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+  }
+footer{
+  margin-top: 100px;
+}
+#navbar > ul > li > a {
+  font-weight: 400;
+  font-size: 16px;
+  vertical-align: middle;
+}
+
+}
