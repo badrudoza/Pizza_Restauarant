@@ -239,7 +239,7 @@ body {
   align-items: center;
   flex-wrap: wrap;
   margin-top: 60px;
-  width: 80vw;
+  width: 95%;
 }
 
 .menu_item {
@@ -248,12 +248,12 @@ body {
   align-items: center;
   margin-top: 40px;
   gap: 20px;
-  width: 600px;
+  width:550px;
 }
 
 .menu_item > img {
-  width: 220px;
-  height: 170px;
+  width: 200px;
+  height: 160px;
 }
 
 .item {
