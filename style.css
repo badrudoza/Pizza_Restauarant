@@ -447,10 +447,8 @@ body {
   margin: 150px auto 50px;
   width: 90%;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  gap: 55%;
-  flex-wrap: wrap;
 }
 
 .footer_data {
@@ -520,6 +518,10 @@ body {
   #navbar > ul > li {
     font-size: 20px;
   }
+  .map_data,.live_map{
+  width: 90%;
+  margin-bottom: 50px;
+}
 }
 
 @media (max-width: 600px) {
@@ -534,6 +536,15 @@ body {
   line-height: 25px;
   letter-spacing: 6%;
 }
+.fotter_container {
+  margin: 10px auto 50px;
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  flex-wrap: wrap;
+}
 
   .menu_item {
     flex-wrap: wrap;
@@ -544,9 +555,8 @@ body {
     align-items: center;
     width: 200px;
   }
-footer{
-  margin-top: 100px;
-}
+
+
 #navbar > ul > li > a {
   font-weight: 400;
   font-size: 16px;
